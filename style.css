@@ -1,0 +1,145 @@
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: #F6F6F6;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #0E63F4;
+}
+p{
+    line-height: 27.2px;
+}
+/**/
+.fw-500{
+    font-weight: 500;
+}
+.fw-600{
+    font-weight: 600;
+}
+.fx-18{
+    font-size: 18px;
+}
+.mb-5{
+    margin-bottom: 10px;
+}
+/**/
+.container{
+    max-width: 600px;
+    color: #1D2B4F;
+    margin: auto;
+    padding: 32px 0 40px 0;
+}
+.logo{
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+}
+.logo span{
+    color: #25B79D;
+}
+.card{
+    margin-top: 40px;
+    background-color: white;
+    padding: 33px 40px 40px 48px;
+    border-radius: 10px;
+}
+.card .name{
+    margin-bottom: 25px;
+}
+.card .text{
+    margin-bottom: 41px;
+}
+.first-info{
+    margin-top: 0px !important;
+}
+.last-info{
+    margin-bottom: 64px;
+}
+.info{
+    padding-left: 18px;
+    display: flex;
+    align-items: start;
+    position: relative;
+    margin-top: 56px;
+}
+.info::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 520px;
+    background: #ECECF5;
+    bottom: -32px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.last-info::before{
+    display: none;
+}
+.info img{
+    margin-right: 24px;
+}
+.info .repeat{
+
+    width: 34px;
+    height: 42px;
+}
+.info .info-container .price{
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+}
+.info .info-container .price button{
+    border: none;
+    padding: 9px 24px;
+    font-weight: 500;
+    color: white;
+    background: #0E63F4;
+    border-radius: 5px;
+    margin-right: 16px;
+}
+.mob-btn{display: none;}
+.links-container{
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 24px;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+.links-container .links p{
+    line-height: normal;
+}
+.links-container .social img:nth-child(2){
+    margin-left: 25px;
+}
+@media(max-width:500px){
+    .container{
+        max-width: 345px;
+    }
+    .card{
+        margin-top: 32px;
+        padding: 40px 12px 40px 12px;
+        border-radius: 0;
+    }
+    .info img {
+        margin-right: 18px;
+    }
+    .links-container {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    .info .info-container .price button{margin-right: 0;}
+    .dsk-btn{display: none;}
+    .mob-btn{display: block;}
+
+    /* .container .info .price{position: relative;} */
+    .container .info .price p{
+        position: absolute;
+        left: 20px;
+    }
+}
